@@ -5,17 +5,19 @@
 - requests
 
 ## 使用
-1. **必要的设置和修改**，check_send.py中修改：
+1. **必要的设置和修改**，[check_send.py](https://github.com/eeerpjw/get-ip-from-tplink/blob/main/check_send.py)中修改：
    - 收件人字典列表
    - 发件邮箱和授权码
    - 如果使用的不是163邮箱，需要更改host和port
+   
 > 如何申请163邮箱的授权码
 > [教程](https://help.mail.163.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2cda80145a1742516)
 
-2. 使用
+2. RUN
 ```bash
 python main.py  # 默认每0.5小时查看一次ip变更
 ```
 ```bash
 python main.py --freq 1 # 每一小时查看一次IP是否变更
 ```
+> 建议开[screen](https://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html)后运行
