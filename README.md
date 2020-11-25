@@ -5,11 +5,7 @@
 - requests
 
 ## 使用
-1. ```bash 
-git clone https://github.com/eeerpjw/get-ip-from-tplink.git
-cd get-ip-from-tplink
-```
-2. **必要的设置和修改**，[check_send.py](https://github.com/eeerpjw/get-ip-from-tplink/blob/main/check_send.py)中修改：
+1. **必要的设置和修改**，[check_send.py](https://github.com/eeerpjw/get-ip-from-tplink/blob/main/check_send.py)中修改：
    - 收件人字典列表
    - 发件邮箱和授权码
    - 如果使用的不是163邮箱，需要更改host和port
@@ -17,7 +13,7 @@ cd get-ip-from-tplink
 > 如何申请163邮箱的授权码
 > [教程](https://help.mail.163.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2cda80145a1742516)
 
-3. RUN
+2. RUN
 ```bash
 python main.py  # 默认每0.5小时查看一次ip变更
 ```
