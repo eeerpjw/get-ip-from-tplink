@@ -5,7 +5,10 @@
 - requests
 
 ## 使用
-1. 
+1. ```bash 
+git clone https://github.com/eeerpjw/get-ip-from-tplink.git
+cd get-ip-from-tplink
+```
 2. **必要的设置和修改**，[check_send.py](https://github.com/eeerpjw/get-ip-from-tplink/blob/main/check_send.py)中修改：
    - 收件人字典列表
    - 发件邮箱和授权码
