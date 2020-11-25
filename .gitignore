@@ -156,5 +156,3 @@ fabric.properties
 # pytorch or tensorflow files
 *.weight
 *.pth%   
-*.txt
-*.log  
