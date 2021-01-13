@@ -1,0 +1,1 @@
+nohup /data/disk_b/pjw/anaconda3/bin/python3 -u /data/disk_b/pjw/get-ip-from-tplink/check_send.py --freq=0.5 > /data/disk_b/pjw/ippjw.log 2>&1 &
