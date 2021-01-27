@@ -6,7 +6,7 @@ from time import sleep
 from datetime import datetime
 from tplink import LoginTpLink
 import logging
-
+from socket import gethostbyname, gaierror
 # 在此更改收件人字典列表
 msg_to={
 	'test':'9********0@qq.com'
@@ -76,9 +76,11 @@ def send_email(msg_to,ip):
             # 发送邮件！
             #print (body,msg['subject'],'.sent email to',key ,'success')
             logging.info(str(datetime.now())+' sent to '+ key + ' successful'+' '+msg_to[key])
-        except smtplib.SMTPException:
+	except smtplib.SMTPException as e1:
 	        #print ('Error.sent email to',key, 'fail')
-            logging.warn(str(datetime.now())+' sent to '+ key + ' fail')
+            logging.warn(str(datetime.now())+' sent to '+ key + ' fail due to Exception:'+e1)
+        except gaierror as e2:
+            logging.warn(str(datetime.now())+' sent to '+ key + ' fail due to Exception:'+e2)
         sleep(dt)
 
 
